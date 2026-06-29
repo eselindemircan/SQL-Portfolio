@@ -1,0 +1,26 @@
+# Digital Marketing Analytics — Facebook & Google Ads
+
+## Overview
+Cross-platform analysis of Facebook Ads and Google Ads daily performance data 
+using PostgreSQL. Focuses on spend efficiency, campaign reach, and return on 
+marketing investment (ROMI).
+
+## Dataset
+- 4 tables: facebook_ads_basic_daily, google_ads_basic_daily, 
+  facebook_adset, facebook_campaign
+- Metrics: spend, impressions, reach, clicks, leads, value
+
+## Questions Answered
+1. Daily spend metrics (avg, max, min) for Facebook and Google separately
+2. Top 5 days by total ROMI across both platforms
+3. Weekly campaign with highest total value
+4. Campaign with biggest monthly reach growth
+5. Longest continuously running ad set across both platforms
+
+## Skills Demonstrated
+- CTEs (Common Table Expressions)
+- Window Functions: LAG(), ROW_NUMBER()
+- COALESCE, NULLIF for null handling
+- UNION ALL for cross-platform data merging
+- Gaps-and-islands algorithm for streak detection
+- ROMI calculation logic
