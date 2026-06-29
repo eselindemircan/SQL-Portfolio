@@ -1,0 +1,39 @@
+Danny Ma — 8 Week SQL Challenge | Case 1: Danny's Diner
+
+Overview
+
+Customer behavior and loyalty program analysis for a Japanese restaurant
+using PostgreSQL. Answers 10+ business questions covering purchase patterns,
+membership conversion, and menu performance.
+
+Dataset
+
+
+3 tables: sales, menu, members
+Fields: customer_id, order_date, product_id, product_name, price, join_date
+
+
+Questions Answered
+
+
+Total amount each customer spent at the restaurant
+Number of days each customer visited
+First item purchased by each customer
+Most purchased item on the menu overall
+Most popular item for each customer
+First item purchased after becoming a member
+Last item purchased before becoming a member
+Total items and amount spent before membership
+Loyalty points per customer ($1 = 10pts, sushi = 2x multiplier)
+Points for customers A & B at end of January (2x points in first week after joining)
+
+
+Skills Demonstrated
+
+
+CTEs (Common Table Expressions) — chained multi-step logic
+Window Functions: RANK(), FIRST_VALUE()
+DISTINCT ON for first-row-per-group queries
+CASE WHEN for conditional point calculation
+Multi-table JOINs across 3 tables
+Date arithmetic for membership period logic
